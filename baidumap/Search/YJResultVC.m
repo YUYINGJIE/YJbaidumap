@@ -10,10 +10,13 @@
 #import "YJTipCell.h"
 #import "YJLocationVC.h"
 
-
+#import "YJMapDicManager.h"
+#import "JZLocationConverter.h"
+#import <MapKit/MapKit.h>
 @interface YJResultVC ()<UITableViewDelegate, UITableViewDataSource,BMKPoiSearchDelegate>
 @property (nonatomic, strong) NSMutableArray *results;
 @property (nonatomic, strong) UITableView *tableView;
+@property(nonatomic,strong) BMKPoiInfo *endPoiInfo;
 
 @end
 
@@ -92,8 +95,14 @@
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
+    
+  
     BMKPoiInfo *info = self.results[indexPath.row];
-    [self openBaiduMapNavigation:info];
+      // 内部配置
+//    [self openBaiduMapNavigation:info];
+//
+    [self OpenMapEndcoordinate:info];
+    self.endPoiInfo=info;
     
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -267,14 +276,33 @@
 }
 
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark - <应用跳转>
+
+-(void)OpenMapEndcoordinate:(BMKPoiInfo*)endPoiInfo{
+    
+    [YJMapDicManager shareManager].endPoiInfo=endPoiInfo;
+    
+    NSMutableArray *mapsArray =[YJMapDicManager shareManager].GetmapsArray;
+    UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"导航" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+    for (int i = 0; i < mapsArray.count; i++) {
+            [alertVC addAction:[UIAlertAction actionWithTitle:mapsArray[i][@"title"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                [self MapNavi:i];
+            }]];
+        
+    }
+    [alertVC addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil]];
+    [self presentViewController:alertVC animated:YES completion:nil];
+    
 }
-*/
+
+
+- (void)MapNavi:(NSInteger)index
+{
+    NSMutableArray *mapsArray =[YJMapDicManager shareManager].GetmapsArray;
+    NSDictionary *dic = mapsArray[index];
+    NSString *urlString = dic[@"url"];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlString]];
+}
 
 @end
