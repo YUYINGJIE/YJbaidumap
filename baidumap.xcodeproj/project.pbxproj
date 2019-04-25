@@ -1,0 +1,841 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2AEA7FDD3353C77DDEE4A91E /* libPods-baidumapTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8891892A0EB5A5832874B861 /* libPods-baidumapTests.a */; };
+		2FF779D3F173792B9D3608BC /* libPods-baidumap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 258104E9D0246154431CB7D5 /* libPods-baidumap.a */; };
+		3F04B30B2254E81D00C6B627 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F04B30A2254E81D00C6B627 /* AppDelegate.m */; };
+		3F04B30E2254E81D00C6B627 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3F04B30D2254E81D00C6B627 /* ViewController.mm */; };
+		3F04B3112254E81D00C6B627 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F04B30F2254E81D00C6B627 /* Main.storyboard */; };
+		3F04B3132254E81E00C6B627 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F04B3122254E81E00C6B627 /* Assets.xcassets */; };
+		3F04B3162254E81E00C6B627 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F04B3142254E81E00C6B627 /* LaunchScreen.storyboard */; };
+		3F04B3192254E81E00C6B627 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F04B3182254E81E00C6B627 /* main.m */; };
+		3F04B3232254E81F00C6B627 /* baidumapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F04B3222254E81F00C6B627 /* baidumapTests.m */; };
+		3F04B32E2254E81F00C6B627 /* baidumapUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F04B32D2254E81F00C6B627 /* baidumapUITests.m */; };
+		3F1696BF22700ADF003BD081 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1696BD22700ADF003BD081 /* UIView+Extension.m */; };
+		3F1696C222702D34003BD081 /* YJMapPointDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1696C122702D34003BD081 /* YJMapPointDetailVC.m */; };
+		3F1696C522703D58003BD081 /* YJLocationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1696C422703D58003BD081 /* YJLocationVC.m */; };
+		3F1C7EF922706DD8001ED48E /* YJSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1C7EF822706DD8001ED48E /* YJSearch.m */; };
+		3F1C7EFC22706EA1001ED48E /* YJResultVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1C7EFB22706EA1001ED48E /* YJResultVC.m */; };
+		3F1C7F0022708DC3001ED48E /* YJTipCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1C7EFE22708DC3001ED48E /* YJTipCell.m */; };
+		3F1C7F0122708DC3001ED48E /* YJTipCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F1C7EFF22708DC3001ED48E /* YJTipCell.xib */; };
+		3F1C7F072270BE08001ED48E /* YJWalkingRouteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1C7F062270BE08001ED48E /* YJWalkingRouteVC.m */; };
+		3F305275226EF74F00EC62E3 /* YJBaiduSearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F305274226EF74F00EC62E3 /* YJBaiduSearchVC.m */; };
+		3F30C735226DEAAE009286E2 /* custom_config_蓑烟雨 in Resources */ = {isa = PBXBuildFile; fileRef = 3F30C731226DEAAE009286E2 /* custom_config_蓑烟雨 */; };
+		3F30C736226DEAAE009286E2 /* custom_config_黑夜 in Resources */ = {isa = PBXBuildFile; fileRef = 3F30C732226DEAAE009286E2 /* custom_config_黑夜 */; };
+		3F30C737226DEAAE009286E2 /* custom_config_午夜蓝 in Resources */ = {isa = PBXBuildFile; fileRef = 3F30C733226DEAAE009286E2 /* custom_config_午夜蓝 */; };
+		3F30C738226DEAAE009286E2 /* custom_config_清新蓝 in Resources */ = {isa = PBXBuildFile; fileRef = 3F30C734226DEAAE009286E2 /* custom_config_清新蓝 */; };
+		3F30C73B226DF54A009286E2 /* YJBaidumapCircleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F30C73A226DF54A009286E2 /* YJBaidumapCircleVC.m */; };
+		3F4A7C28226D947A00A258BA /* YJBaiduMapListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4A7C27226D947A00A258BA /* YJBaiduMapListVC.m */; };
+		3F4A7C2D226D9DFF00A258BA /* YJBaseMapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4A7C2C226D9DFF00A258BA /* YJBaseMapVC.m */; };
+		6524F32AF2F6ABE1CD8E1A31 /* libPods-baidumapUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD61726606DF98187F011460 /* libPods-baidumapUITests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F04B31F2254E81F00C6B627 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F04B2FE2254E81D00C6B627 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F04B3052254E81D00C6B627;
+			remoteInfo = baidumap;
+		};
+		3F04B32A2254E81F00C6B627 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F04B2FE2254E81D00C6B627 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F04B3052254E81D00C6B627;
+			remoteInfo = baidumap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		12ECC8A2D17078E7CE68FF3A /* Pods-baidumap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-baidumap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-baidumap/Pods-baidumap.debug.xcconfig"; sourceTree = "<group>"; };
+		258104E9D0246154431CB7D5 /* libPods-baidumap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-baidumap.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		305EF58976097EF128F4E9EF /* Pods-baidumapUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-baidumapUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-baidumapUITests/Pods-baidumapUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3F04B3062254E81D00C6B627 /* baidumap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = baidumap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F04B3092254E81D00C6B627 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3F04B30A2254E81D00C6B627 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3F04B30C2254E81D00C6B627 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3F04B30D2254E81D00C6B627 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		3F04B3102254E81D00C6B627 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F04B3122254E81E00C6B627 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F04B3152254E81E00C6B627 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3F04B3172254E81E00C6B627 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F04B3182254E81E00C6B627 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3F04B31E2254E81F00C6B627 /* baidumapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = baidumapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F04B3222254E81F00C6B627 /* baidumapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = baidumapTests.m; sourceTree = "<group>"; };
+		3F04B3242254E81F00C6B627 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F04B3292254E81F00C6B627 /* baidumapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = baidumapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F04B32D2254E81F00C6B627 /* baidumapUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = baidumapUITests.m; sourceTree = "<group>"; };
+		3F04B32F2254E81F00C6B627 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F1696BD22700ADF003BD081 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		3F1696BE22700ADF003BD081 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		3F1696C022702D34003BD081 /* YJMapPointDetailVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJMapPointDetailVC.h; sourceTree = "<group>"; };
+		3F1696C122702D34003BD081 /* YJMapPointDetailVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJMapPointDetailVC.m; sourceTree = "<group>"; };
+		3F1696C322703D58003BD081 /* YJLocationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJLocationVC.h; sourceTree = "<group>"; };
+		3F1696C422703D58003BD081 /* YJLocationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJLocationVC.m; sourceTree = "<group>"; };
+		3F1C7EF722706DD8001ED48E /* YJSearch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJSearch.h; sourceTree = "<group>"; };
+		3F1C7EF822706DD8001ED48E /* YJSearch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJSearch.m; sourceTree = "<group>"; };
+		3F1C7EFA22706EA1001ED48E /* YJResultVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJResultVC.h; sourceTree = "<group>"; };
+		3F1C7EFB22706EA1001ED48E /* YJResultVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJResultVC.m; sourceTree = "<group>"; };
+		3F1C7EFD22708DC3001ED48E /* YJTipCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJTipCell.h; sourceTree = "<group>"; };
+		3F1C7EFE22708DC3001ED48E /* YJTipCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJTipCell.m; sourceTree = "<group>"; };
+		3F1C7EFF22708DC3001ED48E /* YJTipCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YJTipCell.xib; sourceTree = "<group>"; };
+		3F1C7F052270BE08001ED48E /* YJWalkingRouteVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJWalkingRouteVC.h; sourceTree = "<group>"; };
+		3F1C7F062270BE08001ED48E /* YJWalkingRouteVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJWalkingRouteVC.m; sourceTree = "<group>"; };
+		3F305273226EF74F00EC62E3 /* YJBaiduSearchVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJBaiduSearchVC.h; sourceTree = "<group>"; };
+		3F305274226EF74F00EC62E3 /* YJBaiduSearchVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJBaiduSearchVC.m; sourceTree = "<group>"; };
+		3F30C731226DEAAE009286E2 /* custom_config_蓑烟雨 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "custom_config_蓑烟雨"; sourceTree = "<group>"; };
+		3F30C732226DEAAE009286E2 /* custom_config_黑夜 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "custom_config_黑夜"; sourceTree = "<group>"; };
+		3F30C733226DEAAE009286E2 /* custom_config_午夜蓝 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "custom_config_午夜蓝"; sourceTree = "<group>"; };
+		3F30C734226DEAAE009286E2 /* custom_config_清新蓝 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "custom_config_清新蓝"; sourceTree = "<group>"; };
+		3F30C739226DF54A009286E2 /* YJBaidumapCircleVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJBaidumapCircleVC.h; sourceTree = "<group>"; };
+		3F30C73A226DF54A009286E2 /* YJBaidumapCircleVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJBaidumapCircleVC.m; sourceTree = "<group>"; };
+		3F4A7C26226D947A00A258BA /* YJBaiduMapListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJBaiduMapListVC.h; sourceTree = "<group>"; };
+		3F4A7C27226D947A00A258BA /* YJBaiduMapListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJBaiduMapListVC.m; sourceTree = "<group>"; };
+		3F4A7C2A226D95B500A258BA /* YJBaiduMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJBaiduMap.h; sourceTree = "<group>"; };
+		3F4A7C2B226D9DFF00A258BA /* YJBaseMapVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJBaseMapVC.h; sourceTree = "<group>"; };
+		3F4A7C2C226D9DFF00A258BA /* YJBaseMapVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJBaseMapVC.m; sourceTree = "<group>"; };
+		669650887B253B3A21CE7320 /* Pods-baidumapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-baidumapTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-baidumapTests/Pods-baidumapTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6BBEA1AB598D2583AA4DE4E2 /* Pods-baidumapUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-baidumapUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-baidumapUITests/Pods-baidumapUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8891892A0EB5A5832874B861 /* libPods-baidumapTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-baidumapTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DD1E614868C570CE3C382A3 /* Pods-baidumapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-baidumapTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-baidumapTests/Pods-baidumapTests.release.xcconfig"; sourceTree = "<group>"; };
+		A2FC90ECDE22DF2FC7255F4F /* Pods-baidumap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-baidumap.release.xcconfig"; path = "Pods/Target Support Files/Pods-baidumap/Pods-baidumap.release.xcconfig"; sourceTree = "<group>"; };
+		FD61726606DF98187F011460 /* libPods-baidumapUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-baidumapUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F04B3032254E81D00C6B627 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FF779D3F173792B9D3608BC /* libPods-baidumap.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F04B31B2254E81F00C6B627 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AEA7FDD3353C77DDEE4A91E /* libPods-baidumapTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F04B3262254E81F00C6B627 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6524F32AF2F6ABE1CD8E1A31 /* libPods-baidumapUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F04B2FD2254E81D00C6B627 = {
+			isa = PBXGroup;
+			children = (
+				3F04B3082254E81D00C6B627 /* baidumap */,
+				3F04B3212254E81F00C6B627 /* baidumapTests */,
+				3F04B32C2254E81F00C6B627 /* baidumapUITests */,
+				3F04B3072254E81D00C6B627 /* Products */,
+				49B0F826F0B22ADA21FCE28C /* Pods */,
+				E68250AE811D91E3064A267C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3F04B3072254E81D00C6B627 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F04B3062254E81D00C6B627 /* baidumap.app */,
+				3F04B31E2254E81F00C6B627 /* baidumapTests.xctest */,
+				3F04B3292254E81F00C6B627 /* baidumapUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F04B3082254E81D00C6B627 /* baidumap */ = {
+			isa = PBXGroup;
+			children = (
+				3FF54F44227137EB00D74C8D /* Search */,
+				3FF54F43227137C200D74C8D /* BaseMap */,
+				3FF54F422271379E00D74C8D /* Extension */,
+				3F04B3092254E81D00C6B627 /* AppDelegate.h */,
+				3F04B30A2254E81D00C6B627 /* AppDelegate.m */,
+				3F4A7C26226D947A00A258BA /* YJBaiduMapListVC.h */,
+				3F4A7C27226D947A00A258BA /* YJBaiduMapListVC.m */,
+				3F4A7C2A226D95B500A258BA /* YJBaiduMap.h */,
+				3F04B30C2254E81D00C6B627 /* ViewController.h */,
+				3F04B30D2254E81D00C6B627 /* ViewController.mm */,
+				3F04B30F2254E81D00C6B627 /* Main.storyboard */,
+				3F04B3122254E81E00C6B627 /* Assets.xcassets */,
+				3F04B3142254E81E00C6B627 /* LaunchScreen.storyboard */,
+				3F04B3172254E81E00C6B627 /* Info.plist */,
+				3F04B3182254E81E00C6B627 /* main.m */,
+				3F30C732226DEAAE009286E2 /* custom_config_黑夜 */,
+				3F30C734226DEAAE009286E2 /* custom_config_清新蓝 */,
+				3F30C731226DEAAE009286E2 /* custom_config_蓑烟雨 */,
+				3F30C733226DEAAE009286E2 /* custom_config_午夜蓝 */,
+			);
+			path = baidumap;
+			sourceTree = "<group>";
+		};
+		3F04B3212254E81F00C6B627 /* baidumapTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F04B3222254E81F00C6B627 /* baidumapTests.m */,
+				3F04B3242254E81F00C6B627 /* Info.plist */,
+			);
+			path = baidumapTests;
+			sourceTree = "<group>";
+		};
+		3F04B32C2254E81F00C6B627 /* baidumapUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3F04B32D2254E81F00C6B627 /* baidumapUITests.m */,
+				3F04B32F2254E81F00C6B627 /* Info.plist */,
+			);
+			path = baidumapUITests;
+			sourceTree = "<group>";
+		};
+		3FF54F422271379E00D74C8D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3F1696BE22700ADF003BD081 /* UIView+Extension.h */,
+				3F1696BD22700ADF003BD081 /* UIView+Extension.m */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		3FF54F43227137C200D74C8D /* BaseMap */ = {
+			isa = PBXGroup;
+			children = (
+				3F4A7C2B226D9DFF00A258BA /* YJBaseMapVC.h */,
+				3F4A7C2C226D9DFF00A258BA /* YJBaseMapVC.m */,
+				3F30C739226DF54A009286E2 /* YJBaidumapCircleVC.h */,
+				3F30C73A226DF54A009286E2 /* YJBaidumapCircleVC.m */,
+				3F305273226EF74F00EC62E3 /* YJBaiduSearchVC.h */,
+				3F305274226EF74F00EC62E3 /* YJBaiduSearchVC.m */,
+				3F1696C022702D34003BD081 /* YJMapPointDetailVC.h */,
+				3F1696C122702D34003BD081 /* YJMapPointDetailVC.m */,
+				3F1696C322703D58003BD081 /* YJLocationVC.h */,
+				3F1696C422703D58003BD081 /* YJLocationVC.m */,
+				3F1C7F052270BE08001ED48E /* YJWalkingRouteVC.h */,
+				3F1C7F062270BE08001ED48E /* YJWalkingRouteVC.m */,
+			);
+			path = BaseMap;
+			sourceTree = "<group>";
+		};
+		3FF54F44227137EB00D74C8D /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				3F1C7EF722706DD8001ED48E /* YJSearch.h */,
+				3F1C7EF822706DD8001ED48E /* YJSearch.m */,
+				3F1C7EFA22706EA1001ED48E /* YJResultVC.h */,
+				3F1C7EFB22706EA1001ED48E /* YJResultVC.m */,
+				3F1C7EFD22708DC3001ED48E /* YJTipCell.h */,
+				3F1C7EFE22708DC3001ED48E /* YJTipCell.m */,
+				3F1C7EFF22708DC3001ED48E /* YJTipCell.xib */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		49B0F826F0B22ADA21FCE28C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				12ECC8A2D17078E7CE68FF3A /* Pods-baidumap.debug.xcconfig */,
+				A2FC90ECDE22DF2FC7255F4F /* Pods-baidumap.release.xcconfig */,
+				669650887B253B3A21CE7320 /* Pods-baidumapTests.debug.xcconfig */,
+				8DD1E614868C570CE3C382A3 /* Pods-baidumapTests.release.xcconfig */,
+				6BBEA1AB598D2583AA4DE4E2 /* Pods-baidumapUITests.debug.xcconfig */,
+				305EF58976097EF128F4E9EF /* Pods-baidumapUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E68250AE811D91E3064A267C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				258104E9D0246154431CB7D5 /* libPods-baidumap.a */,
+				8891892A0EB5A5832874B861 /* libPods-baidumapTests.a */,
+				FD61726606DF98187F011460 /* libPods-baidumapUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F04B3052254E81D00C6B627 /* baidumap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F04B3322254E81F00C6B627 /* Build configuration list for PBXNativeTarget "baidumap" */;
+			buildPhases = (
+				4B1D1D82340C9CD787358A59 /* [CP] Check Pods Manifest.lock */,
+				3F04B3022254E81D00C6B627 /* Sources */,
+				3F04B3032254E81D00C6B627 /* Frameworks */,
+				3F04B3042254E81D00C6B627 /* Resources */,
+				AFAFBD70400602C006D31AED /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = baidumap;
+			productName = baidumap;
+			productReference = 3F04B3062254E81D00C6B627 /* baidumap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F04B31D2254E81F00C6B627 /* baidumapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F04B3352254E81F00C6B627 /* Build configuration list for PBXNativeTarget "baidumapTests" */;
+			buildPhases = (
+				DC2D1E7475D89E085310E7B9 /* [CP] Check Pods Manifest.lock */,
+				3F04B31A2254E81F00C6B627 /* Sources */,
+				3F04B31B2254E81F00C6B627 /* Frameworks */,
+				3F04B31C2254E81F00C6B627 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F04B3202254E81F00C6B627 /* PBXTargetDependency */,
+			);
+			name = baidumapTests;
+			productName = baidumapTests;
+			productReference = 3F04B31E2254E81F00C6B627 /* baidumapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3F04B3282254E81F00C6B627 /* baidumapUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F04B3382254E81F00C6B627 /* Build configuration list for PBXNativeTarget "baidumapUITests" */;
+			buildPhases = (
+				B3CF9DFD4303A40BAFBD6890 /* [CP] Check Pods Manifest.lock */,
+				3F04B3252254E81F00C6B627 /* Sources */,
+				3F04B3262254E81F00C6B627 /* Frameworks */,
+				3F04B3272254E81F00C6B627 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F04B32B2254E81F00C6B627 /* PBXTargetDependency */,
+			);
+			name = baidumapUITests;
+			productName = baidumapUITests;
+			productReference = 3F04B3292254E81F00C6B627 /* baidumapUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F04B2FE2254E81D00C6B627 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = YYJ;
+				TargetAttributes = {
+					3F04B3052254E81D00C6B627 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					3F04B31D2254E81F00C6B627 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 3F04B3052254E81D00C6B627;
+					};
+					3F04B3282254E81F00C6B627 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 3F04B3052254E81D00C6B627;
+					};
+				};
+			};
+			buildConfigurationList = 3F04B3012254E81D00C6B627 /* Build configuration list for PBXProject "baidumap" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F04B2FD2254E81D00C6B627;
+			productRefGroup = 3F04B3072254E81D00C6B627 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F04B3052254E81D00C6B627 /* baidumap */,
+				3F04B31D2254E81F00C6B627 /* baidumapTests */,
+				3F04B3282254E81F00C6B627 /* baidumapUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F04B3042254E81D00C6B627 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F30C735226DEAAE009286E2 /* custom_config_蓑烟雨 in Resources */,
+				3F30C738226DEAAE009286E2 /* custom_config_清新蓝 in Resources */,
+				3F30C737226DEAAE009286E2 /* custom_config_午夜蓝 in Resources */,
+				3F04B3162254E81E00C6B627 /* LaunchScreen.storyboard in Resources */,
+				3F04B3132254E81E00C6B627 /* Assets.xcassets in Resources */,
+				3F30C736226DEAAE009286E2 /* custom_config_黑夜 in Resources */,
+				3F1C7F0122708DC3001ED48E /* YJTipCell.xib in Resources */,
+				3F04B3112254E81D00C6B627 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F04B31C2254E81F00C6B627 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F04B3272254E81F00C6B627 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4B1D1D82340C9CD787358A59 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-baidumap-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFAFBD70400602C006D31AED /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-baidumap/Pods-baidumap-resources.sh",
+				"${PODS_ROOT}/BaiduMapKit/BaiduMapKit/BaiduMapAPI_Map.framework/mapapi.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/mapapi.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-baidumap/Pods-baidumap-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3CF9DFD4303A40BAFBD6890 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-baidumapUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC2D1E7475D89E085310E7B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-baidumapTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F04B3022254E81D00C6B627 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F30C73B226DF54A009286E2 /* YJBaidumapCircleVC.m in Sources */,
+				3F4A7C28226D947A00A258BA /* YJBaiduMapListVC.m in Sources */,
+				3F1C7EFC22706EA1001ED48E /* YJResultVC.m in Sources */,
+				3F1696C222702D34003BD081 /* YJMapPointDetailVC.m in Sources */,
+				3F04B30E2254E81D00C6B627 /* ViewController.mm in Sources */,
+				3F305275226EF74F00EC62E3 /* YJBaiduSearchVC.m in Sources */,
+				3F1C7EF922706DD8001ED48E /* YJSearch.m in Sources */,
+				3F1C7F0022708DC3001ED48E /* YJTipCell.m in Sources */,
+				3F04B3192254E81E00C6B627 /* main.m in Sources */,
+				3F4A7C2D226D9DFF00A258BA /* YJBaseMapVC.m in Sources */,
+				3F1696BF22700ADF003BD081 /* UIView+Extension.m in Sources */,
+				3F1C7F072270BE08001ED48E /* YJWalkingRouteVC.m in Sources */,
+				3F1696C522703D58003BD081 /* YJLocationVC.m in Sources */,
+				3F04B30B2254E81D00C6B627 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F04B31A2254E81F00C6B627 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F04B3232254E81F00C6B627 /* baidumapTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F04B3252254E81F00C6B627 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F04B32E2254E81F00C6B627 /* baidumapUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F04B3202254E81F00C6B627 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F04B3052254E81D00C6B627 /* baidumap */;
+			targetProxy = 3F04B31F2254E81F00C6B627 /* PBXContainerItemProxy */;
+		};
+		3F04B32B2254E81F00C6B627 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F04B3052254E81D00C6B627 /* baidumap */;
+			targetProxy = 3F04B32A2254E81F00C6B627 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3F04B30F2254E81D00C6B627 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F04B3102254E81D00C6B627 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3F04B3142254E81E00C6B627 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F04B3152254E81E00C6B627 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F04B3302254E81F00C6B627 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3F04B3312254E81F00C6B627 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F04B3332254E81F00C6B627 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12ECC8A2D17078E7CE68FF3A /* Pods-baidumap.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9T5ZB224LL;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/baidumap/YJBaiduMap.h";
+				INFOPLIST_FILE = baidumap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = YYJ.BaiduMap.com;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3F04B3342254E81F00C6B627 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2FC90ECDE22DF2FC7255F4F /* Pods-baidumap.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9T5ZB224LL;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/baidumap/YJBaiduMap.h";
+				INFOPLIST_FILE = baidumap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = YYJ.BaiduMap.com;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3F04B3362254E81F00C6B627 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 669650887B253B3A21CE7320 /* Pods-baidumapTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9T5ZB224LL;
+				INFOPLIST_FILE = baidumapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = YYJ.baidumapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/baidumap.app/baidumap";
+			};
+			name = Debug;
+		};
+		3F04B3372254E81F00C6B627 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DD1E614868C570CE3C382A3 /* Pods-baidumapTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9T5ZB224LL;
+				INFOPLIST_FILE = baidumapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = YYJ.baidumapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/baidumap.app/baidumap";
+			};
+			name = Release;
+		};
+		3F04B3392254E81F00C6B627 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BBEA1AB598D2583AA4DE4E2 /* Pods-baidumapUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9T5ZB224LL;
+				INFOPLIST_FILE = baidumapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = YYJ.baidumapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = baidumap;
+			};
+			name = Debug;
+		};
+		3F04B33A2254E81F00C6B627 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 305EF58976097EF128F4E9EF /* Pods-baidumapUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9T5ZB224LL;
+				INFOPLIST_FILE = baidumapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = YYJ.baidumapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = baidumap;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F04B3012254E81D00C6B627 /* Build configuration list for PBXProject "baidumap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F04B3302254E81F00C6B627 /* Debug */,
+				3F04B3312254E81F00C6B627 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F04B3322254E81F00C6B627 /* Build configuration list for PBXNativeTarget "baidumap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F04B3332254E81F00C6B627 /* Debug */,
+				3F04B3342254E81F00C6B627 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F04B3352254E81F00C6B627 /* Build configuration list for PBXNativeTarget "baidumapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F04B3362254E81F00C6B627 /* Debug */,
+				3F04B3372254E81F00C6B627 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F04B3382254E81F00C6B627 /* Build configuration list for PBXNativeTarget "baidumapUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F04B3392254E81F00C6B627 /* Debug */,
+				3F04B33A2254E81F00C6B627 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F04B2FE2254E81D00C6B627 /* Project object */;
+}
