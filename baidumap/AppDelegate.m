@@ -22,6 +22,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+  
+    NSLog(@"%@",NSHomeDirectory());
     [self setupBaiduMap];
     if (@available(iOS 11.0, *)){
         [[UIScrollView appearance] setContentInsetAdjustmentBehavior:UIScrollViewContentInsetAdjustmentNever];
@@ -36,7 +38,7 @@
     
     _manager = [CLLocationManager new];
     [_manager requestAlwaysAuthorization];
-    [[BMKLocationAuth sharedInstance] checkPermisionWithKey:@"35UOWu5Hg6VyTsHezXR6xpbYASuRqFrX" authDelegate:self];
+    [[BMKLocationAuth sharedInstance] checkPermisionWithKey:@"" authDelegate:self];
     /**
      百度地图SDK所有API均支持百度坐标（BD09）和国测局坐标（GCJ02），用此方法设置您使用的坐标类型.
      默认是BD09（BMK_COORDTYPE_BD09LL）坐标.
@@ -49,7 +51,7 @@
         NSLog(@"经纬度类型设置失败");
     }
     // 如果要关注网络及授权验证事件，请设定generalDelegate参数
-    BOOL ret = [_mapManager start:@"35UOWu5Hg6VyTsHezXR6xpbYASuRqFrX"  generalDelegate:self];
+    BOOL ret = [_mapManager start:@""  generalDelegate:self];
     if (!ret) {
         NSLog(@"manager start failed!");
     }
